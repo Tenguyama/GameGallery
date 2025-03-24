@@ -18,7 +18,7 @@
    ```sh
    cp .env.example .env
    ```
-   В `.env` потрібно вказати `RWAG_API_KEY=your_api_key_here`
+   В `.env` потрібно вказати `RAWG_API_KEY=your_api_key_here`
 
 3. **Запустити Docker-контейнери:**
    ```sh
