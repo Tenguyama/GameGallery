@@ -20,8 +20,6 @@ services:
         depends_on:
             - db
         container_name: game-gallery
-        working_dir: /var/www  # Це дозволяє запускати команди в робочій директорії Laravel
-        command: bash -c "npm install && npm run dev && php-fpm"  # Спочатку встановлює npm залежності, потім запускає php-fpm
     db:
         image: mysql:8.0
         restart: always

@@ -3,7 +3,6 @@
 namespace Database\Seeders;
 
 use App\Models\Book;
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Http;
 class BookSeeder extends Seeder
@@ -16,8 +15,9 @@ class BookSeeder extends Seeder
         /*
          * use RAWG for seeding sample games info for database
          */
+        $key = config('services.rawg.api_key');
         $games = Http::get('https://api.rawg.io/api/games', [
-            'key' => env('RAWG_API_KEY'),
+            'key' => $key,
             'page_size' => 40,
         ])->json();
 //        dd($games);

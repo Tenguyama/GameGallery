@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7844f27cbf40034bb4f2bcd3959f2f18",
+    "content-hash": "5c9e0973e98bd8c3672e1a448dfceddc",
     "packages": [
         {
             "name": "brick/math",
@@ -1055,6 +1055,80 @@
             "time": "2025-02-03T10:55:03+00:00"
         },
         {
+            "name": "inertiajs/inertia-laravel",
+            "version": "v2.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/inertiajs/inertia-laravel.git",
+                "reference": "d855ad18bcaae883e307619370d8c3dcfb5adbaa"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/inertiajs/inertia-laravel/zipball/d855ad18bcaae883e307619370d8c3dcfb5adbaa",
+                "reference": "d855ad18bcaae883e307619370d8c3dcfb5adbaa",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "laravel/framework": "^10.0|^11.0|^12.0",
+                "php": "^8.1.0",
+                "symfony/console": "^6.2|^7.0"
+            },
+            "require-dev": {
+                "laravel/pint": "^1.16",
+                "mockery/mockery": "^1.3.3",
+                "orchestra/testbench": "^8.0|^9.2",
+                "phpunit/phpunit": "^10.4|^11.0",
+                "roave/security-advisories": "dev-master"
+            },
+            "suggest": {
+                "ext-pcntl": "Recommended when running the Inertia SSR server via the `inertia:start-ssr` artisan command."
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Inertia\\ServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "./helpers.php"
+                ],
+                "psr-4": {
+                    "Inertia\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jonathan Reinink",
+                    "email": "jonathan@reinink.ca",
+                    "homepage": "https://reinink.ca"
+                }
+            ],
+            "description": "The Laravel adapter for Inertia.js.",
+            "keywords": [
+                "inertia",
+                "laravel"
+            ],
+            "support": {
+                "issues": "https://github.com/inertiajs/inertia-laravel/issues",
+                "source": "https://github.com/inertiajs/inertia-laravel/tree/v2.0.1"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/reinink",
+                    "type": "github"
+                }
+            ],
+            "time": "2025-02-18T19:00:36+00:00"
+        },
+        {
             "name": "laravel/framework",
             "version": "v12.3.0",
             "source": {
@@ -2005,75 +2079,6 @@
                 }
             ],
             "time": "2024-12-08T08:18:47+00:00"
-        },
-        {
-            "name": "marcreichel/igdb-laravel",
-            "version": "5.2.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/marcreichel/igdb-laravel.git",
-                "reference": "fe760947ad0f59b0351924617774b04113fc8f05"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/marcreichel/igdb-laravel/zipball/fe760947ad0f59b0351924617774b04113fc8f05",
-                "reference": "fe760947ad0f59b0351924617774b04113fc8f05",
-                "shasum": ""
-            },
-            "require": {
-                "ext-json": "*",
-                "guzzlehttp/guzzle": "~6.0|~7.0",
-                "illuminate/support": "^11.0|^12.0",
-                "nesbot/carbon": "^2.53.1|^3.0",
-                "php": "^8.2"
-            },
-            "require-dev": {
-                "larastan/larastan": "^3.0.2",
-                "laravel/pint": "^1.13",
-                "nunomaduro/collision": "^8.0",
-                "orchestra/testbench": "^9.0|^10.0",
-                "pestphp/pest": "^3.7.4",
-                "pestphp/pest-plugin-type-coverage": "^3.2.3",
-                "rector/rector": "^2.0.7",
-                "roave/security-advisories": "dev-latest"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "MarcReichel\\IGDBLaravel\\IGDBLaravelServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "MarcReichel\\IGDBLaravel\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Marc Reichel",
-                    "email": "mail@marcreichel.de"
-                }
-            ],
-            "description": "A Laravel wrapper for version 4 of the IGDB API (Apicalypse) including webhook handling",
-            "keywords": [
-                "api-wrapper",
-                "apicalypse",
-                "igdb",
-                "igdb-api",
-                "laravel",
-                "wrapper"
-            ],
-            "support": {
-                "issues": "https://github.com/marcreichel/igdb-laravel/issues",
-                "source": "https://github.com/marcreichel/igdb-laravel/tree/5.2.0"
-            },
-            "time": "2025-02-28T07:53:39+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -8134,12 +8139,12 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {},
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
         "php": "^8.2"
     },
-    "platform-dev": [],
+    "platform-dev": {},
     "plugin-api-version": "2.6.0"
 }
